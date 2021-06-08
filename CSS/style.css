@@ -95,10 +95,10 @@
 .sea-rch{
     border: 0.1px solid forestgreen;
     margin-right: 5vw;
-    margin-top: 11px;
-    height: 8vh;
+    margin-top: 7px;
+    height: 6vh;
     border-radius: 4px;
-    
+    margin-left: -10px;
 }
 .search-link{
     text-decoration: none;
@@ -106,12 +106,12 @@
 }
 
 #sea-rch{
-    padding: 3px;
     width: 65px;
     font-family: var(--font1);
-    transition: all 0.3s ease-in-out;
     color:forestgreen;
     margin-left: 5px ;
+    padding-bottom: 0px;
+    margin: 0px;
 }
 #search:hover{
     color:forestgreen;
