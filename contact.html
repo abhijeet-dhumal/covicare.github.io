@@ -5,63 +5,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoviCare/Contacts</title>
+    <title>CoviCare</title>
     <link rel="stylesheet" href="CSS/utils.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
 </head>
 
 <body>
     <!-- first title bar part -->
     <div class="container1">
-        <div class="items item-1"><a href="#" style="color:white;text-decoration: none;">
-                <h3 id="sign" style="margin-top: 0;">SIGNUP</h3>
-            </a></div>
+        <button type="button" class="btn btn-outline-light ml-3" style="margin-left: 1vw;" data-bs-toggle="modal"
+            data-bs-target="#signupModal">
+            <h5>SignUp</h5>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">SignUp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="mysignin()">Sign-in</button>
+
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <h6 class="modal-title" id="registerModalLabel">if dont have an account.. <button
+                                class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Register</button></h6>
+                        <!-- form for register -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                            aria-hidden="true" style="margin-bottom:50px;">
+                            <div class="modal-dialog">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginModalLabel">Register as a Covid-Warrior
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="loginInputEmail1" class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" id="loginInputText"
+                                                    aria-describedby="textHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail2" class="form-label">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword2" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword2">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="loginInputEmail1" class="form-label">Gender</label>
+                                                <div class=" ml-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault1" id="flexRadioDefault1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault2" id="flexRadioDefault2">
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            Female
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault3" id="flexRadioDefault3">
+                                                        <label class="form-check-label" for="flexRadioDefault3">
+                                                            Prefer not to say...
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom03" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="validationCustom03"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9" style="margin-bottom: 20px;">
+                                                <label for="validationCustom04" class="form-label">State</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value="">Choose...</option>
+                                                    <option>Maharashtra</option>
+                                                    <option>...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Check me
+                                                    out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary"
+                                                onclick="mylogin()">Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="items item-2">
             <h1>CoviCare</h1>
         </div>
     </div>
 
     <!-- navigation bar part -->
-    <div class="navbar">
-        <div class="item item1"><a href="https://abhijeet-dhumal.github.io/covicare.github.io/" style="color:grey;text-decoration: none;">Home</a></div>
+    <div class="nav-bar">
+        <div class="item item1"><a href="https://github.com/abhijeet-dhumal/covicare.github.io/index.html" style="color:grey;text-decoration: none;">Home</a></div>
         <div class="item item1">Services</div>
         <div class="item item1">About</div>
         <div class="item item2 ">Contacts</div>
         <div class="searchbox"><input type="text" placeholder="Search Here.."
-                style="border:1px solid #ccc; padding:11px;outline:none;margin-left: 10px;"></div>
-        <div class="search"><a href="#" style="color:grey;text-decoration: none;">
-                <h3 id="search" style="margin-top: 3px;margin-left: 6px;">Search</h3>
+                style="border:1px solid #ccc; padding:7px;outline:none;margin-left: 10px;"></div>
+        <div class="sea-rch"><a href="#" class="search-link">
+                <h3 id="se-arch" class="font1" style="font-size:18px;padding:1.5vh 2vh;">Search</h3>
             </a></div>
     </div>
+
     <div class="contact-content">
         <div class="contact-content-left">
             <img src="img/contact us.jpg" alt="" width="385px" style="margin-left: 5vw;margin-top:5vw;">
         </div>
         <div class="contact-content-right">
-            <div class="contact-title">
+            <div class="contact-ti-tle">
                 <h1 class="font1" style="margin-bottom: -5vh;">We are here to help you !!!</h1>
             </div><br><br>
             <div class="contact-form">
                 <form action="">
                     <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;">Enter Your Name </h3>
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Your Name </h3>
                         <input type="text" class=" form-c form-name">
                     </div><br>
                     <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;">Enter E-mail ID </h3>
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter E-mail ID </h3>
                         <input type="email" class=" form-c form-email">
                     </div><br>
                     <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;">Enter Contact No. </h3>
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Contact No. </h3>
                         <input type="text" class=" form-c form-contact">
                     </div><br>
                     <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;">Enter Message Here </h3>
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Message Here </h3>
                         <textarea class=" form-t form-msg" cols="10" rows="5" style="width:40vw"></textarea>
                     </div><br>
                     <div class="contact-form-element">
                         <button class="form-submit" name="btn-submit">
-                            <h3 class="font2" id="submit" >Submit<h3>
+                            <h3 class="font2" id="submit">Submit<h3>
                         </button>
                     </div><br>
                 </form>
@@ -77,6 +204,12 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
