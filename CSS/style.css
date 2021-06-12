@@ -66,7 +66,11 @@
     margin-top: 15px;
 
 }
-.item:hover{
+#link-items{
+    color:grey;
+    text-decoration: none;
+}
+#link-items:hover{
     font-weight:550 ;
     color:blue;
 
@@ -93,29 +97,29 @@
     padding-bottom: 1vw; */
 }
 .sea-rch{
-    border: 0.1px solid forestgreen;
+    border: 0.1px solid blue;
     margin-right: 5vw;
     margin-top: 7px;
     height: 6vh;
     border-radius: 4px;
     margin-left: -10px;
 }
+.sea-rch:hover{
+    border: 0.1px solid forestgreen;
+}
 .search-link{
     text-decoration: none;
-    color: forestgreen;
 }
-
 #sea-rch{
     width: 80px;
     font-family: var(--font1);
-    color:forestgreen;
+    color:blue;
     margin-left: 5px ;
     padding-bottom: 0px;
     margin: 0px;
 }
-#search:hover{
+#sea-rch:hover{
     color:forestgreen;
-    /* font-weight: bolder; */
 }
 /* <---------------------common header content ends here----------------------> */
 
@@ -144,17 +148,17 @@
     border-radius: 50px;
 }
 #madefor{
-    margin-left:5vw;
-    margin-top: 3vw;
-    font-size:18px;
-    /* color:white; */
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 3vh;
+    font-size: 18px;
+
 }
 #slogan{
     margin-left:8vw;
     margin-top: 2vw;
     font-size:28px;
     font-family: var(--font1);
-    /* color:white; */
 }
 .container3 p{
     font-family: var(--font1);
@@ -210,6 +214,14 @@ input{
 }
 .article{
     margin-bottom: -4vh;
+}
+#article-img{
+    width: 13vw;
+    border-radius: 27px;
+    height: 12vw;
+    margin-left: 1vw;
+    margin-top: 5vh;
+    margin-bottom:5vh;
 }
 /* <---------------------index.html content ends here----------------------> */
 
