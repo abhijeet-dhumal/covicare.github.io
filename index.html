@@ -149,35 +149,41 @@
 
     <!-- navigation bar part -->
     <div class="nav-bar">
-        <div class="item item2">Home </div>
-        <div class="item item1"><a href="https://abhijeet-dhumal.github.io/covicare.github.io/service" id="link-items" style="text-decoration: none;">Services</a></div>
-        <div class="item item1"><a href="https://abhijeet-dhumal.github.io/covicare.github.io/about" id="link-items" style="text-decoration: none;">About</a></div>
-        <div class="item item1"><a href="https://abhijeet-dhumal.github.io/covicare.github.io/contact.html" id="link-items" style="text-decoration: none;">Contacts</a></div>
-        <div class="searchbox"><input type="text" placeholder="Search Here.."
-                style="border:1px solid #ccc; padding:7px;outline:none;margin-left: 10px;"></div>
-        <div class="sea-rch"><a href="#" class="search-link">
-                <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1.5vh 2vh;">Search</h3>
-            </a></div>
+        <div class="nav-content">
+            <div class="item item2">Home </div>
+            <div class="item item1"><a href="/service" id="link-items" style="text-decoration: none;">Services</a></div>
+            <div class="item item1"><a href="/about" id="link-items" style="text-decoration: none;">About</a></div>
+            <div class="item item1"><a href="/contact.html" id="link-items" style="text-decoration: none;">Contacts</a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchbox"><input type="text" placeholder="   Search Here.."></div>
+            <div class="sea-rch"><a href="#" class="search-link">
+                    <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1vh 2vh;">Search</h3>
+                </a></div>
+        </div>
     </div>
 
     <!-- container3 part -->
     <div class="container3">
-        <div class="container3-left" style="background-blend-mode: darken;background-position: center;background-size: cover;">
+        <div class="container3-left">
             <div id="madefor">
                 <h4 class="font1" style="">Made For Covid-Warriors</h4>
             </div>
             <div id="slogan" style="">
                 <h2>Welcome to our Covi-care</h2>
             </div>
-            <p class="line" style="">In the course of COVID-19 pandemic ,there are so many peoples out there who need our help,
+            <p class="line" style="">In the course of COVID-19 pandemic ,there are so many peoples out there who need
+                our help,
                 So we
                 are here for them...</p>
-            <p class="line" style="">The Covid-warriors have registered on this website to help peoples which are stucked in this
+            <p class="line" style="">The Covid-warriors have registered on this website to help peoples which are
+                stucked in this
                 lockdown due to lack of services</p>
             <p class="line" style="">So join us to help them,..</p>
         </div><br><br>
         <div class="container3-right">
-            <img src="img/doctor,nurse.jpg" alt="" width=500px style="margin-top:5vh;" >
+            <img src="img/doctor,nurse.jpg" id="main-img" alt="">
         </div>
     </div>
 
@@ -190,10 +196,10 @@
             <div class="row">
                 <div class="col-4" style="height:450px;margin-top: -20px;">
                     <div class="p-3 border bg-light my-3" style="height: 400px;">
-                        <h2>Emergency</h2>
-                        <p style="margin-left:-15px;"><b>______________________</b></p>
-                        <h2 style="margin-left: 10%;margin-top:10%;">Corronavirus disease(COVID-19)pandemic</h2>
-                        <button type="button" class="btn btn-dark" style="margin-top: 70px;margin-left: 15%;"><a
+                        <h2 class="emer">Emergency</h2>
+                        <p style="margin-left:-15px;"><b>____________</b></p>
+                        <h2 class="emer-head">Corrona-virus disease (COVID-19) pandemic</h2>
+                        <button type="button" class="btn btn-dark"><a
                                 href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank"
                                 style="color:white;"> All info here--></a></button>
                     </div>
@@ -307,41 +313,37 @@
     <h2 class="font1" style="margin-left: 5vw;">Featured articles</h2>
     <div class="home-articles">
         <div class="article-1">
-            <div class="article-left"><img src="img/virus-bg.jpg" alt="doctors" id="article-img"
-                    style="width: 13vw;border-radius: 27px;height: 12vw;margin-left: 1vw;margin-top: 5vh;">
+            <div class="article-left"><img src="img/virus-bg.jpg" alt="doctors" class="article-img">
             </div>
-            <div class="article-right" style="margin-right:5vw; margin-top: 9vh;">                <span><b>Author Name</b></span><br>
+            <div class="article-right" > <span><b>Author Name</b></span><br>
                 <span>Lorem ipsum dolor sit amet consectetur</span><br>
                 <span>adipisicing elit. Tempora, unde.</span><br><br>
-                <span><b>January 16 | 6 min read</b></span>
+                <div class="m-bot"><span><b>January 16 | 6 min read</b></span></div>
             </div>
         </div>
         <div class="article-1">
-            <div class="article-left"><img src="img/components.jpg" alt="doctors" id="article-img"
-                style="width: 13vw;border-radius: 27px;height: 12vw;margin-left: 1vw;margin-top: 5vh;">
+            <div class="article-left"><img src="img/components.jpg" alt="doctors" class="article-img">
             </div>
-            <div class="article-right" style="margin-right:5vw; margin-top: 9vh;">                <span><b>Author Name</b></span><br>
+            <div class="article-right" > <span><b>Author Name</b></span><br>
                 <span>Lorem ipsum dolor sit amet consectetur</span><br>
                 <span>adipisicing elit. Tempora, unde.</span><br><br>
-                <span><b>December 28 | 2 weeks read</b></span>
-            </div>
-        </div>
-        <div class="article-1">
-            <div class="article-left"><img src="img/typewriter.jpg" alt="doctors" id="article-img"
-                style="width: 13vw;border-radius: 27px;height: 12vw;margin-left: 1vw;margin-top: 5vh;">            </div>
-            <div class="article-right" style="margin-right:5vw; margin-top: 9vh;">                <span><b>Author Name</b></span><br>
-                <span>Lorem ipsum dolor sit amet consectetur</span><br>
-                <span>adipisicing elit. Tempora, unde.</span><br><br>
-                <span><b>June 15 | 15months read</b></span>
+                <div class="m-bot"><span><b>December 28 | 2 weeks read</b></span></div>
             </div>
         </div>
         <div class="article-1">
-            <div class="article-left"><img src="img/doctor.jpg" alt="doctors" id="article-img"
-                style="width: 13vw;border-radius: 27px;height: 12vw;margin-left: 1vw;margin-top: 5vh;">            </div>
-            <div class="article-right" style="margin-right:5vw; margin-top: 9vh;">                <span><b>Author Name</b></span><br>
+            <div class="article-left"><img src="img/typewriter.jpg" alt="doctors" class="article-img"> </div>
+            <div class="article-right" > <span><b>Author Name</b></span><br>
                 <span>Lorem ipsum dolor sit amet consectetur</span><br>
                 <span>adipisicing elit. Tempora, unde.</span><br><br>
-                <span><b>March 17 | 18 months read</b></span>
+                <div class="m-bot"><span><b>June 15 | 15months read</b></span></div>
+            </div>
+        </div>
+        <div class="article-1">
+            <div class="article-left"><img src="img/doctor.jpg" alt="doctors" class="article-img"> </div>
+            <div class="article-right" > <span><b>Author Name</b></span><br>
+                <span>Lorem ipsum dolor sit amet consectetur</span><br>
+                <span>adipisicing elit. Tempora, unde.</span><br><br>
+                <div class="m-bot"><span><b>March 17 | 18 months read</b></span></div>
             </div>
         </div>
     </div><br><br>
