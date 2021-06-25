@@ -1,2 +1,2 @@
 # covicare.github.io
-My CoviCare website
+      As we have faced second wave we saw that our medical services are insufficient to deal with shortage of ambulances is one of the important &amp;  problem faced by people our idea is mainly targeting to fill this shortage to tackle this issue we proposed idea to convert school bus into ambulances , Not having Awareness of Covid 19 and its treatment is also one of the reason for increase of covid 19 so we are creating a website which will connect our covid warriors such as health care workers, ambulance drivers volunteers to the people by connecting all we will definitely face covid 19 effectively
