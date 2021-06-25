@@ -602,6 +602,73 @@ input{
 /* <---------------------index.html content ends here----------------------> */
 
 
+
+/* <-----------------------chat.html content starts here-------------------->  */
+
+#chat-head{
+    margin-left:5vw;
+    margin-top:5vh;
+}
+.container-chat{
+    padding:4vw 1vw 3vw 1vw;
+    border: 2px solid #153D77;
+    margin: 5vh 5vw 2vh 5vw;
+    background: linear-gradient(#35588d, white);
+    height:50vh;
+    overflow-y: auto;
+}
+.message-right{
+    float: right;
+    clear:both;
+    margin: 1vh 0vh 1vh 0vh;
+    width:25vw;
+    padding:1vh;
+    border: 1px solid white;
+    background: white;
+    border-radius: 3px;
+}
+.message-left{
+    float:left;
+    clear:both;
+    margin: 1vh 0vh 1vh 0vh;
+    width:25vw;
+    padding:1vh;
+    border: 1px solid white;
+    background: white;
+    border-radius: 3px;
+}
+#send-container{
+    text-align: center;
+    margin:0vh 0vw 10vh 5vw; 
+    
+}
+#msg-input{
+    width:40vw;
+    padding:0.5vh;
+}
+.sub-btn{
+    width:6vw;
+    border: 0.1px solid blue;
+    height: 4vh;
+    border-radius: 3px;
+    margin-left: 0.3vw;
+}
+.sub-btn:hover{
+    border: 0.1px solid forestgreen;
+}
+#sub-btn{
+    font-family: var(--font1);
+    color:blue;
+}
+#sub-btn:hover{
+    color:forestgreen;
+}
+/* <-----------------------chat.html content ends here-------------------->  */
+
+
+
+
+
 /* <---------------------contact.html content starts here----------------------> */
 .contact-content{
     display: flex;
