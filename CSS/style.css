@@ -647,7 +647,7 @@ input{
     padding:0.5vh;
 }
 .sub-btn{
-    width:6vw;
+    width:50px;
     border: 0.1px solid blue;
     height: 4vh;
     border-radius: 3px;
@@ -708,7 +708,7 @@ input{
     color: #fff;
     background: #153D77;
     padding-top: 8px;
-    width: 8vw;
+    width: 80px;
     height: 6vh;
     border: 1px solid #ccc;
     border-radius: 0px;
