@@ -12,11 +12,10 @@ function register_validate() {
     let uname = document.getElementById("loginInputText");
     let uemail = document.getElementById("exampleInputEmail2");
     let upassword = document.getElementById("exampleInputPassword2");
-    if (uname.value == "abhijeet" && uemail.value == "abhijeet@gmail.com" && upassword="abhi") {
+    if (uname.value == "abhijeet" && uemail.value == "abhijeet@gmail.com" && upassword =="abhi") {
         alert("Welcome Abhijeet!!!");
     }
     else {
-        alert(uname.value +" " + uemail.value +" " + upassword.value + " please enter valid input");
+        alert(uname.value + " " + uemail.value + " " + upassword.value + " please enter valid input");
     }
 }
-
