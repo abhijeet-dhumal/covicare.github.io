@@ -28,8 +28,8 @@
                         <h5 class="modal-title" id="signupModalLabel">SignUp</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <form>
+                     <div class="modal-body">
+                        <form methods="" action="" onsubmit="validate()">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -43,38 +43,38 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
-                            <button type="submit" class="btn btn-primary" onclick="mysignin()">Sign-in</button>
+                            <button type="submit" onclick="sign_up_validate()" class="btn btn-primary">Sign-in</button>
 
                         </form>
                     </div>
 
                     <div class="modal-footer">
                         <h6 class="modal-title" id="registerModalLabel">if dont have an account.. <button
-                                class="btn btn-outline-secondary" data-bs-toggle="modal"
+                            class="btn btn-outline-secondary" data-bs-toggle="modal"
                                 data-bs-target="#loginModal">Register</button></h6>
-                        <!-- form for register -->
+                                <!-- form for register -->
                         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
-                            aria-hidden="true" style="margin-bottom:50px;">
-                            <div class="modal-dialog">
+                        aria-hidden="true" style="margin-bottom:50px;">
+                        <div class="modal-dialog">
                                 <div class="modal-content ">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="loginModalLabel">Register as a Covid-Warrior
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                        aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form>
+                                        <form action="" method="" onsubmit="register_validate()">
                                             <div class="mb-3">
                                                 <label for="loginInputEmail1" class="form-label">Full Name</label>
                                                 <input type="text" class="form-control" id="loginInputText"
-                                                    aria-describedby="textHelp">
+                                                aria-describedby="textHelp">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail2" class="form-label">Email
                                                     address</label>
                                                 <input type="email" class="form-control" id="exampleInputEmail2"
-                                                    aria-describedby="emailHelp">
+                                                aria-describedby="emailHelp">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputPassword2" class="form-label">Password</label>
@@ -85,7 +85,7 @@
                                                 <div class=" ml-2">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault1" id="flexRadioDefault1">
+                                                        name="flexRadioDefault1" id="flexRadioDefault1">
                                                         <label class="form-check-label" for="flexRadioDefault1">
                                                             Male
                                                         </label>
@@ -99,7 +99,7 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault3" id="flexRadioDefault3">
+                                                        name="flexRadioDefault3" id="flexRadioDefault3">
                                                         <label class="form-check-label" for="flexRadioDefault3">
                                                             Prefer not to say...
                                                         </label>
@@ -131,7 +131,7 @@
                                                     out</label>
                                             </div>
                                             <button type="submit" class="btn btn-primary"
-                                                onclick="mylogin()">Register</button>
+                                            onclick="register_validate()">Register</button>
                                         </form>
                                     </div>
                                 </div>
@@ -358,6 +358,7 @@
             <p></p>
         </div>
     </footer>
+    <script src="https://abhijeet-dhumal.github.io/covicare.github.io/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
