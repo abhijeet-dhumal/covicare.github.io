@@ -162,42 +162,43 @@
                 </a></div>
         </div>
     </div>
-
+    
     <div class="contact-content">
-        <div class="contact-content-left">
-            <img src="img/contact us.jpg" alt="" width="385px" style="margin-left: 5vw;margin-top:5vw;">
-        </div>
-        <div class="contact-content-right">
-            <div class="contact-ti-tle">
-                <h1 class="font1" style="margin-bottom: -5vh;">We are here to help you !!!</h1>
-            </div><br><br>
-            <div class="contact-form">
-                <form action="">
-                    <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Your Name </h3>
-                        <input type="text" class=" form-c form-name">
-                    </div><br>
-                    <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter E-mail ID </h3>
-                        <input type="email" class=" form-c form-email">
-                    </div><br>
-                    <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Contact No. </h3>
-                        <input type="text" class=" form-c form-contact">
-                    </div><br>
-                    <div class="contact-form-element">
-                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Message Here </h3>
-                        <textarea class=" form-t form-msg" cols="10" rows="5" style="width:40vw"></textarea>
-                    </div><br>
-                    <div class="contact-form-element">
-                        <button class="form-submit" name="btn-submit">
-                            <h3 class="font2" id="submit">Submit<h3>
-                        </button>
-                    </div><br>
-                </form>
+            <div class="contact-content-left">
+                <img src="img/contact us.jpg" alt="" width="385px" style="margin-left: 5vw;margin-top:5vw;">
+            </div>
+            <div class="contact-content-right">
+                <div class="contact-ti-tle">
+                    <h1 class="font1" style="margin-bottom: -5vh;">We are here to help you !!!</h1>
+                </div><br><br>
+                <div class="contact-form">
+                    <form action="" method="" onsubmit="contact_info()">
+                        <div class="contact-form-element">
+                            <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Your Name </h3>
+                            <input type="text" class=" form-c form-name"  id="contact_name">
+                        </div><br>
+                        <div class="contact-form-element">
+                            <h3 class="font2" style="color:#153D77;font-size:25px;">Enter E-mail ID </h3>
+                            <input type="email" class=" form-c form-email" id="contact_email">
+                        </div><br>
+                        <div class="contact-form-element">
+                            <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Contact No. </h3>
+                            <input type="text" class=" form-c form-contact" id="contact_no">
+                        </div><br>
+                        <div class="contact-form-element">
+                            <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Message Here </h3>
+                            <textarea class=" form-t form-msg" cols="10" rows="5" style="width:40vw" id="contact_msg"></textarea>
+                        </div><br>
+                        <div class="contact-form-element">
+                            <button class="form-submit" name="btn-submit" onclick="contact_info()">
+                                <h3 class="font2" id="submit">Submit<h3>
+                            </button>
+                        </div><br>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+
 
     <!-- footer part is here -->
     <footer class="footer">
@@ -206,7 +207,8 @@
             <p></p>
         </div>
     </footer>
-
+    
+    <script src="https://abhijeet-dhumal.github.io/covicare.github.io/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
